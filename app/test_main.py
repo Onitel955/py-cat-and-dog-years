@@ -16,6 +16,10 @@ from app.main import get_human_age
         (27, 27, [2, 2]),
         (28, 28, [3, 2]),
         (29, 29, [3, 3]),
+        (31, 0, [3, 0]),
+        (32, 0, [4, 0]),
+        (0, 33, [0, 3]),
+        (0, 34, [0, 4]),
         (100, 100, [21, 17]),
     ],
     ids=[
@@ -27,6 +31,10 @@ from app.main import get_human_age
         "cat and dog still share the same age on the boundary",
         "cat gains an extra year 4 years after dog",
         "dog gains an extra year 5 years after cat",
+        "cat stays on the same extra year one year before its interval ends",
+        "cat gains another extra year once a full 4-year interval passes",
+        "dog stays on the same extra year one year before its interval ends",
+        "dog gains another extra year once a full 5-year interval passes",
         "large ages are converted correctly",
     ],
 )
